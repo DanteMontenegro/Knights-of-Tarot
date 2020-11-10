@@ -63,7 +63,7 @@ class MixOrMatch {
             this.timer.innerText = this.timeRemaining;
             if(this.timeRemaining === 0)
                 this.gameOver();
-        }, 1000);
+        }, 2000);
     }
     gameOver() {
         clearInterval(this.countdown);
