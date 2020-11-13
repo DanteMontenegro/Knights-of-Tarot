@@ -22,7 +22,7 @@ color: #373a40;
 font-family: 'Precious', serif;
 font-weight: normal;
 text-align: center;
-font-size: 5.2em;
+font-size: 4.2em;
 }
 
 .swords {
@@ -62,8 +62,8 @@ perspective: 500px;
 
 .card {
 position: relative;
-height: 300px;
-width: 200px;
+height: 275px;
+width: 175px;
 transition: all .2s ease-in-out;
 }
 
