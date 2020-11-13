@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Precious";
-  src: url("Fonts/Precious.ttf") format("truetype"),
-       url("Fonts/Precious.ttf") format("truetype");
+  src: url("Precious.ttf") format("truetype"),
+       url("Precious.ttf") format("truetype");
 }
 
 * {
@@ -10,11 +10,11 @@ box-sizing: border-box;
 
 html {
 min-height: 100vh;
-cursor: url(Assets/Cursors/Saphire-cursor.cur), auto;
+cursor: url(Saphire-cursor.cur), auto;
 }
 
 body {
-background-image: url('assets/images/background.jpg'); 
+background-image: url('background.jpg'); 
 } 
 
 /* Text */
