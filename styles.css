@@ -14,8 +14,10 @@ cursor: url(Assets/Cursors/Saphire-cursor.cur), auto;
 }
 
 body {
-background-image: url('Assets/Images/background.jpg'); 
+background-image: url('assets/images/background.jpg'); 
 } 
+
+/* Text */
 
 .page-title {
 color: #373a40;
@@ -25,9 +27,31 @@ text-align: center;
 font-size: 4.2em;
 }
 
-.swords {
-display: none;
-}
+.overlay-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #214252;
+  transition: background-color 500ms, font-size 500ms;
+  }
+
+  .overlay-text-small {
+    font-size: .3em;
+    }
+    
+  .overlay-text.visible {
+    display: flex;
+    animation: overlay-grow 500ms forwards;
+    }
+
+    /* Divs and Images*/
 
 #text-divider-1 {
 display: block;
@@ -113,29 +137,7 @@ border-color: #333;
 transform: rotateY(180deg);
 }
 
-.overlay-text {
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 100;
-display: none;
-position: fixed;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-color: #214252;
-transition: background-color 500ms, font-size 500ms;
-}
-
-.overlay-text-small {
-font-size: .3em;
-}
-
-.overlay-text.visible {
-display: flex;
-animation: overlay-grow 500ms forwards;
-}
+/*Animations*/
 
 @keyframes overlay-grow {
 from {
