@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Precious";
-  src: url("Assets/Fonts/Precious.ttf") format("truetype"),
-       url("Assets/Fonts/Precious.ttf") format("truetype");
+  src: url("Fonts/Precious.ttf") format("truetype"),
+       url("Fonts/Precious.ttf") format("truetype");
 }
 
 * {
