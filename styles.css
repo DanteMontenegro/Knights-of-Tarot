@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "Precious";
-  src: url("Precious.ttf") format("truetype"),
-       url("Precious.ttf") format("truetype");
+  font-family: 'Precious';
+  src: url('Precious.ttf') format('truetype');
 }
 
 * {
@@ -14,17 +13,23 @@ cursor: url(Saphire-cursor.cur), auto;
 }
 
 body {
-background-image: url('background.jpg'); 
+margin: 0;
+background: url("background.jpg");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 } 
 
 /* Text */
 
 .page-title {
-color: #373a40;
-font-family: 'Precious', serif;
+color: #070d59;
+font-family: serif;
 font-weight: normal;
 text-align: center;
-font-size: 4.2em;
+font-size: 6.5em;;
+text-shadow: 0.3px 0.3px gold;
 }
 
 .overlay-text {
@@ -38,8 +43,9 @@ font-size: 4.2em;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #0f213b;
+  color: #14274e;
   transition: background-color 500ms, font-size 500ms;
+  text-shadow: 3.5px 3.5px lightgoldenrodyellow;
   }
 
   .overlay-text-small {
@@ -56,11 +62,15 @@ font-size: 4.2em;
 #text-divider-1 {
 display: block;
 margin: -2.8% auto;
+max-width: 25%;
+max-height: 25%;
 }
 
 #text-divider-2 {
   margin: -2.8% auto;
   display: block;
+  max-width: 10%;
+max-height: 10%
 }
 
 .game-info-container {
@@ -70,7 +80,7 @@ justify-content: space-between;
 }
 
 .game-info {
-color: #14274e;
+color: #070d59;
 font-size: 4em;
 font-family: 'Precious';
 }
@@ -86,8 +96,8 @@ perspective: 500px;
 
 .card {
 position: relative;
-height: 285px;
-width: 185px;
+height: 300px;
+width: 200px;
 transition: all .2s ease-in-out;
 }
 
@@ -116,7 +126,7 @@ transform: rotateY(0);
 .card:hover {
 -webkit-transform: translateX(-3px);
 transform: translateX(-3px);
-transform: scale(1.1)
+transform: scale(1.1);
 }
 
 .card-image {
